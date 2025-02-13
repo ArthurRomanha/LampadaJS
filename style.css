@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    justify-content: center;
+}
+.container-buttons{
+    display: flex;
+    justify-content: space-around;
+}
