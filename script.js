@@ -17,4 +17,9 @@ const quebra = () => {
     estadoLampada = "quebrada"
 }
 lampada.addEventListener("dblclick", quebra);
-lampada.addEventListener("onmouseover", )
+lampada.addEventListener("onmouseover", () => {
+    lampada.src = "IMG/ligada.jpg";
+})
+lampada.addEventListener("onmouseout", () => {
+    lampada.src = "IMG/desligada.jpg";
+})
