@@ -17,13 +17,13 @@ const quebra = () => {
     estadoLampada = "quebrada"
 }
 lampada.addEventListener("dblclick", quebra);
-lampada.addEventListener("onmouseover", () => {
+lampada.addEventListener("mouseover", () => {
     if (!(estadoLampada == "quebrada")) {
         lampada.src = "IMG/ligada.jpg";
         estadoLampada = "ligada";
     }
 })
-lampada.addEventListener("onmouseout", () => {
+lampada.addEventListener("mouseout", () => {
     if (!(estadoLampada == "quebrada")) {
         lampada.src = "IMG/desligada.jpg";
         estadoLampada = "desligada";
