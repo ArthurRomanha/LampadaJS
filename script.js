@@ -18,8 +18,14 @@ const quebra = () => {
 }
 lampada.addEventListener("dblclick", quebra);
 lampada.addEventListener("onmouseover", () => {
-    lampada.src = "IMG/ligada.jpg";
+    if (!(estadoLampada == "quebrada")) {
+        lampada.src = "IMG/ligada.jpg";
+        estadoLampada = "ligada";
+    }
 })
 lampada.addEventListener("onmouseout", () => {
-    lampada.src = "IMG/desligada.jpg";
+    if (!(estadoLampada == "quebrada")) {
+        lampada.src = "IMG/desligada.jpg";
+        estadoLampada = "desligada";
+    }
 })
